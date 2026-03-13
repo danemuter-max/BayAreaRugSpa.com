@@ -1,1 +1,83 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Bay Area Rug Spa</title>\n    <style>\n        body {\n            font-size: 16px;\n            padding: 0;\n            margin: 0;\n        }\n        .button {\n            padding: 12px 24px;\n            font-size: 16px;\n            min-height: 48px;\n        }\n        .nav {\n            display: flex;\n            justify-content: space-between;\n            padding: 10px;\n            background-color: #f8f8f8;\n        }\n        .nav a {\n            padding: 12px;\n            margin: 0 5px;\n        }\n        @media (max-width: 600px) {\n            body {\n                padding: 10px;\n            }\n            .button {\n                width: 100%;\n                text-align: center;\n                font-size: 16px;\n            }\n            .nav {\n                flex-direction: column;\n                align-items: center;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class="nav">\n        <a href="tel:+1234567890" class="call-button">Call Us</a>\n        <a href="#" class="button">Book Now</a>\n    </div>\n    <h1>Welcome to Bay Area Rug Spa</h1>\n    <p>Book your professional clean today!</p>\n    </body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Area Rug Spa</title>
+    <style>
+        /* Mobile-friendly enhancements */
+        body {
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+        a {
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button {
+            padding: 12px;
+            font-size: 16px;
+            min-width: 48px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .form-input {
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px 0;
+            width: calc(100% - 22px);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            h1, h2, h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bay Area Rug Spa</h1>
+    </header>
+    <nav>
+        <a href="#services" class="button">Our Services</a>
+        <a href="#contact" class="button">Contact Us</a>
+    </nav>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <div><p>Rug Cleaning</p></div>
+                <div><p>Rug Repair</p></div>
+                <div><p>Rug Storage</p></div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" class="form-input" placeholder="Your Name" required>
+                <input type="email" class="form-input" placeholder="Your Email" required>
+                <textarea class="form-input" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Bay Area Rug Spa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
